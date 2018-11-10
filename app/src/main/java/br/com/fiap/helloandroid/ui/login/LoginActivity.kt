@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import br.com.fiap.helloandroid.R
+import br.com.fiap.helloandroid.extensions.value
 import br.com.fiap.helloandroid.ui.main.MainActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -20,7 +21,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun fazerPedido() {
         val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("nome", inputNome.text.toString())
+        intent.putExtra("nome", inputNome.value())
+        intent.putExtra("telefone", inputTelefone.value())
         startActivity(intent)
     }
 }

@@ -14,13 +14,13 @@
         tools:context=".ui.main.MainActivity">
 
         <TextView
-            style="@style/label_titulo"
-            android:text="@string/label_dado_cliente" />
-
-        <EditText
+            android:id="@+id/tvNome"
+            style="@style/margin_lateral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_nome_do_cliente" />
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            tools:text="Fulano da Silva" />
 
         <TextView
             style="@style/label_titulo"
