@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_dado_cliente" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nome_do_cliente" />
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_escolha" />
+
+        <LinearLayout style="@style/container_horizontal">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/label_atum" />
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/label_bacon" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container_horizontal">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/label_calabresa" />
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/label_mussarela" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_tamanho_da_pizza" />
+
+        <RadioGroup
+            style="@style/margin_lateral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_pequena" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_media" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_grande" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_forma_de_pagamento" />
+
+        <Spinner
+            style="@style/margin_lateral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/formas_pagamento" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_personalizado"
+            android:text="@string/label_calcular" />
+
+    </LinearLayout>
+</ScrollView>
