@@ -1,8 +1,8 @@
-package br.com.fiap.helloandroid
+package br.com.fiap.helloandroid.ui.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import br.com.fiap.helloandroid.R
 
 class MainActivity : AppCompatActivity() {
 
