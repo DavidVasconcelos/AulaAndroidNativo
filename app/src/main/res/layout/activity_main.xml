@@ -64,16 +64,19 @@
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/rbPequena"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_pequena" />
 
             <RadioButton
+                android:id="@+id/rbMedia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_media" />
 
             <RadioButton
+                android:id="@+id/rbGrande"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_grande" />
@@ -84,6 +87,7 @@
             android:text="@string/label_forma_de_pagamento" />
 
         <Spinner
+            android:id="@+id/spFormaPagamento"
             style="@style/margin_lateral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -12,4 +12,10 @@ class MainViewModel : ViewModel() {
     var calabresaSelecionada = false
     var mussarelaSelecionada = false
 
+    var rbPequena = false
+    var rbMedia = false
+    var rbGrande = false
+
+    var formaPagamento = 0
+
 }
